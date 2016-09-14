@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.fl-l {
+    float: left;
+}
+
+.fl-r {
+    float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.grid-animate {
+    margin: 15px 25px;
+}
+
+.bt-move {
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/*.grid-content {*/
+/*float: left;*/
+/*width: 120px;*/
+/*height: 120px;*/
+
+/*}*/
+
+.grid {
+    float: left;
+    width: 120px;
+    height: 120px;
+    background: #f9e3d3;
+    margin-right: 25px;
+}
+
+.grid-item {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: rgba(243, 55, 0, 0.75);
+    margin-bottom: 15px;
+    transition: transform 0.4s;
+}
+
+.grid-item:nth-child(2) {
+    margin: 0 15px;
+}
+
+.grid-item:nth-child(5) {
+    margin: 0 15px;
+}
+
+.grid-item:nth-child(8) {
+    margin: 0 15px;
+}
+
+.grid-item.is-moved {
+    transform: translateX(145px);
+}
