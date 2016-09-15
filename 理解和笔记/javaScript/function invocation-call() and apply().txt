@@ -1,0 +1,27 @@
+function call()和apply()都是调用函数的，主要和this有关。
+call()和apply()可以改变this具体指向的对象，以此达到一个函数调用不同对象时获得不同的值。
+call()和apply()第一个参数都为指定的对象，不同在于第二个参数。call()从第二个参数开始是多个参数依次排列，同时在其对象函数头部一般也需要相同个数的参数声明。apply()第二个参数传入的是一个数组。
+例如：
+var mObj = {string:"我是mObj中的值！！！"};
+var string = "我是window中的值！！！";
+function mO(){
+    this.string = "我是mO()中的值！！！";
+}
+function function1(){
+    alert(this.string);
+}
+function1();
+function1.call(window);
+function1.call(mObj);
+function1.call(new mO());
+
+this指的是拥有当前代码的对象，也就是包含this最近的对象。
+function在调用时，如果直接调用，如：function();则等同于window.function();其中的this指的是window.
+function在调用时，如果在一个对象中以方法形式调用，如：obj.function(),则其中this指的是当前obj。
+function在调用时，如果在构造器中调用this指的是新构造的这个函数对象，如
+    function myFunction(a,b){
+        this.result = a + b;
+    }
+    var c = new myFunction(1,2);
+    alert(c.result);                    //弹出为3
+function在调用时，如果用call()和apply()调用，则可以设置function中this指定的值，改变代表的对象。
