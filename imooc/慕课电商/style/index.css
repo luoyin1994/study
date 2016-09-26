@@ -1,0 +1,286 @@
+/*topBar*/
+.topBar {
+    height: 31px;
+    line-height: 31px;
+    background: #f7f7f7;
+}
+
+/*!*选择器需要做重复查找*/
+/*将line-height放在上边比较好*!*/
+/*.topBar .leftArea {*/
+/*line-height: 31px;*/
+/*}*/
+.leftArea {
+    float: left;
+}
+
+.rightArea {
+    float: right;
+}
+
+/*设置图片方法*/
+.collection {
+    background: url("../image/1.首页-assets/collection-icon.jpg") left center no-repeat;
+    /*方法一*/
+    /*text-indent:19px;*/
+    /*方法二*/
+    padding-left: 19px;
+    font-weight: bolder;
+    /*方法三*/
+    /*.shopClass i {*/
+    /*width: 11px;*/
+    /*height: 7px;*/
+    /*margin-left: 11px;*/
+    /*overflow: hidden;*/
+    /*background: url("../image/1.首页-assets/三角箭头.png") left center no-repeat;*/
+    /*display: inline-block;*/
+    /*}*/
+}
+
+.topBar a:hover {
+    color: red;
+}
+
+/*logoBar*/
+.logoBar {
+    height: 85px;
+    /*line-height: 85px;*/
+    background: #1d7ad9;
+}
+
+.logo {
+    padding-left: 39px;
+    padding-top: 13px;
+}
+
+/*search*/
+.search_box {
+    width: 430px;
+    padding-left: 185px;
+    padding-top: 23px;
+}
+
+.search_text {
+    background-color: #fff;
+    /*input光标兼容解决*/
+    /*方法一*/
+    /*!*14为里边的font-size*!*/
+    /*height:14px;*/
+    /*line-height:14px;*/
+    /*padding:11px 5px 10px;*/
+    /*方法2*/
+    width: 350px;
+    height: 35px;
+    /*css hack \9所有的ie浏览器*/
+    line-height: 35px \9;
+    padding: 0 5px;
+}
+
+.search_btn {
+    width: 70px;
+    height: 35px;
+    font-size: 14px;
+    background: #ff8800;
+    color： #fff;
+}
+
+/*购物车*/
+.shopCar {
+    width: 145px;
+    height: 35px;
+    background: #ff8800;
+    margin-top: 23px;
+    margin-right: 59px;
+    /*font缩写*/
+    /*font:14px/35px 'MicrosoftYaHei', '微软雅黑'; */
+    font-size: 14px;
+    line-height: 35px;
+    color: #ffffff;
+    /*margin-left:31px;*/
+}
+
+.shopText {
+    background: url("../image/1.首页-assets/shop-icon.png") 10px center no-repeat;
+    width: 87px;
+    height: 100%;
+    border-right: 1px solid #e27a00;
+    text-indent: 40px;
+}
+
+.shopNum {
+    height: 100%;
+    border-left: 1px solid #ff9c01;
+    /*文字向右增加*/
+    /*方法一*/
+    /*width: 56px;*/
+    /*padding-left:19px;*/
+    /*text-indent: 19px;*/
+    /*数字改变时只能向右增加*/
+    /*方法二*/
+    width: calc(56px - 29px);
+    text-align: right;
+    padding-right: 29px;
+    background: url("../image/1.首页-assets/箭头.png") 33px center no-repeat;
+}
+
+/*导航*/
+.navBox {
+    height: 35px;
+    line-height: 35px;
+    background: #1369c0;
+    color: #fff;
+}
+
+.shopClass {
+    position: relative;
+    width: 190px;
+    /*注意会留下后患*/
+    /*line-height: 35px;*/
+    /*text-align: center;*/
+}
+
+.shopClass h3 {
+    text-align: center;
+    line-height: 35px;
+}
+
+.shopClass i {
+    width: 11px;
+    height: 7px;
+    margin-left: 11px;
+    overflow: hidden;
+    background: url("../image/1.首页-assets/三角箭头.png") left center no-repeat;
+    display: inline-block;
+}
+
+/*导航列表设置li下的a标签比较好*/
+.nav .item a {
+    display: inline-block;
+    height: 35px;
+    padding: 0 35px;
+    color: #fff;
+}
+
+.nav .item .active {
+    background: #4593fd;
+}
+
+.nav .item a:hover {
+    background: #4593fd;
+}
+
+/*商品弹出列表*/
+.shopClass-show {
+    /*display:none;*/
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 100%;
+    background: #4593fd;
+}
+
+.shopClass-show .active {
+    background: #5aa1fe;
+}
+
+.shopClass-item:hover {
+    background: #5aa1fe;
+}
+
+.shopClass-item {
+    border-bottom: 1px solid #3487f2;
+    border-top: 1px solid #5aa1fe;
+    padding: 14px 10px;
+    background: url("../image/1.首页-assets/arrow-shopClass-show.png") 172px 20px no-repeat;
+}
+
+.shopClass-item a:hover {
+    color: #fff;
+}
+
+.shopClass-item a + a {
+    margin-left: 6px;
+}
+
+.shopClass-item dt {
+    height: 20px;
+    line-height: 20px;
+}
+
+.shopClass-item dt a {
+    margin-left: 0;
+    padding: 0 6px;
+}
+
+.shopClass-item dt a:hover {
+    padding: 0 6px;
+    border-radius: 10px;
+    background: #106ac0;
+    font-size: 14px;
+}
+
+.shopClass-item a {
+    /*height: 100%;*/
+    /*line-height: 20px;*/
+    font-size: 14px;
+    color: #c2d9f8;
+}
+
+.shopClass-item .b a {
+    font-weight: bold;
+    color: #fff;
+}
+
+/*商品弹出列表子列表*/
+
+.shopClass-list {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 568px;
+    height: 382px;
+    border: 1px solid #dddddd;
+}
+
+.shopList-item {
+    line-height: 23px;
+    margin: 0 19px;
+    padding: 9px 0;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 12px;
+}
+
+.shopList-item dt {
+    height: 23px;
+}
+
+.shopList-item dt {
+    font-weight: bold;
+    color: #4b88da;
+}
+
+/*类似inline-block，float效果，
+  运用margin-top:-14px
+  和padding-left:72px;*/
+.shopList-item dd {
+    margin-top: -23px;
+    padding-left: 72px;
+    color: #666666;
+}
+
+.shopList-item dd a {
+    margin-right: 12px;
+}
+
+.shopList-item dd a:hover,
+.shopList-item dd a:active {
+    color: #ff7300;
+}
+
+.shopList-link {
+    width: 105px;
+    height:26px;
+}
+.shopList-link i{
+    background: #2785e6 url("../image/1.首页-assets/arrow-shopClass-show.png") left center no-repeat;
+}

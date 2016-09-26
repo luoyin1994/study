@@ -1,0 +1,237 @@
+/**************
+ * 页面样式
+ **************/
+
+/* ============
+   基本默认值
+   ============ */
+
+html {
+    /*向上寻找寻找到html节点也没有设置时一个em=16px，有则继承其最近的上级元素*/
+    /*rem参照物是html根元素，固定不变，html没有设定时1em=16px*/
+    font-size: 62.5%;
+    color: #222;
+}
+
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* ============
+   工具样式
+   ============ */
+
+/*在父元素中居中显示*/
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*运用float，！important优先级优先于元素本身的样式设置，变成最高*/
+.pull-right {
+    float: right !important;
+}
+
+.pull_left {
+    float: left !important;
+}
+
+/*文本对齐*/
+.text-right {
+    text-align: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+/*display直接隐藏对应元素，并且挤占该元素的空间，hidden元素隐藏了，但是空间让出，不会挤占该元素的空间*/
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    /*不可见但是有站位*/
+    visibility: hidden;
+}
+
+/*隐藏文本。链接被图片代替文本时需要有文本方便诸如seo网页阅读器等，text-hide可以隐藏该文本*/
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+/*float清除方法*/
+/*display:flex可以替代float的布局方式但是ie9,8以及低级别的ie支持不好
+  .container{第一种！float:left！;第二种！overflow:hidden/auto！需要增加一句话清除浮动，浮动元素再次回到容器，撑开容器层;}
+  不设置时浮动的元素浮动成立，但是其父元素包裹层height=0,浮动元素无法撑开元素，包裹层原有背景颜色无法得到体现
+  或者给包裹层也增加浮动，但是又增加了包裹层浮动的问题，用增加问题解决问题，这种影响了页面布局，不推荐。
+  现在的通用方法是使用css的伪元素:after,给浮动元素增加样式class .clearfix:after 来实现在浮动元素容器增加一个看不见的块状元素来清理浮动
+  和在包裹层中浮动元素最后方增加一个看不见的块状元素。
+
+
+  clearfix:after{
+     content:".";加一段内容
+     display:block;生成元素块级显示占满剩余空间
+     height:0;避免生成元素破坏原有生成高度
+     visibility:hidden;不可见但是有占位
+     上边的都是隐藏生成的content:".";
+     clear:both;清除浮动唯一代码
+  }
+
+  优化版
+  .clearfix:after{
+     content:" ";
+     display:table;可以创建匿名表格单元，可以触发bfc
+     clear:both;
+  }
+  .clearfix:before,清除浮动没有必要性，可以防止浏览器顶部的空白崩溃，防止下一个元素margin-top和上一个元素的margin-bottom叠加。如果下一个元素margin-top和上一个元素的margin-bottom都设置为10px,按理说应该为20px间隔，但实际只有10px,发生了像素叠加。
+  .clearfix:after {
+     content: " ";
+     display: table;
+  }
+
+  现在大部分使用的方式
+  .clearfix:after {
+     clear: both;
+  }
+
+  .clearfix{
+     zoom : 1;ie兼容6，7
+  }
+  */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ============
+   浏览器更新提示
+   ============ */
+
+.browserupgrade {
+    margin: 0;
+    padding: 1rem;
+    background: #ccc;
+}
+
+/* ============
+   自定义页面样式
+   ============ */
+
+body {
+    font-size: 1.2rem;
+    /*1.5倍行间距*/
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #0ae;
+    text-decoration: underline;
+}
+
+
+/*==============
+  打印样式
+  ==============*/
+
+/*一般通用*/
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     *使用#和javascript的超链接不打印href
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    / / 仅针对opera浏览器。避免在元素内部插入分页符
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+    / / 当元素内部发生分页时，底部必须保留的最少行数 widows: 3;
+    / / 当元素发生分页时，必须在元素顶部保留的最少行数
+    }
+
+    h2,
+    h3 {
+        page-brek-after: avoid;
+    / / 避免在元素后面插入分页符
+    }
+
+}
