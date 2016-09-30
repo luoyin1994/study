@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en" class="root61">
+<head>
+    <title>京东超值购</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta charset="UTF-8"/>
+    <script>
+        basePath = '//gou.jd.com/';
+    </script>
+    <!-- css -->
+    <link rel="icon" href="/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+    <style>
+        .slider-nav li {
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+        }
+    </style>
+
+    <link rel="stylesheet" href="//static.360buyimg.com/jzt/cps/index/20160719/css/style.min.css">
+    <style type="text/css">
+        .td_box .td_text {
+            width: 140px;
+            margin: 14px 0 0 14px;
+        }
+
+        .td_box .td_img img {
+            margin: 14px 14px 0 0;
+        }
+    </style>
+    <!-- end css -->
+    <!-- js -->
+
+    <script type="text/javascript" src="//static.360buyimg.com/jzt/cps/index/comm/js/jquery-1.6.4.min.js"></script>
+    <!--[if lte IE 7]>
+    <script type="text/javascript" src="//static.360buyimg.com/jshop/common/jquery/json2.js"></script><![endif]-->
+    <script type="text/javascript" src="//misc.360buyimg.com/??jdf/1.0.0/unit/base/1.0.0/base.js"></script>
+    <script type="text/javascript" src="//static.360buyimg.com/jzt/cps/index/comm/js/underscore.min.js"></script>
+    <script type="text/javascript"
+            src="//misc.360buyimg.com/product/good_things/1.0.0/widget/jshop-header-footer/jshop-header-footer.js"
+            source="widget"></script>
+
+    <script type="text/javascript"
+            src="//static.360buyimg.com/jzt/cps/index/20160719/js/??customNav.min.js,focus.min.js,focusExtra160627.min.js,discountoftheday.min.js,recomm.min.js,brandoftheday.min.js,floor.min.js,hot.min.js,cps-base.min.js"></script>
+    <script type="text/javascript" src="/public/js/2016/head_seatch.min.js"></script>
+
+    <!-- end js -->
+</head>
+<body>
+<!-- header -->
+
+<!--Header-->
+<div id="shortcut-2014" clstag="firsttype|keycount|cps_function|nav">
+    <div class="w">
+        <ul class="fl">
+            <li class="dorpdown" id="ttbar-mycity"></li>
+        </ul>
+        <ul class="fr">
+            <li class="fore1" id="ttbar-login">
+                <a target="_blank" href="javascript:login();" class="link-login">你好，请登录</a>&nbsp;&nbsp;<a
+                    href="javascript:regist();" class="link-regist style-red">免费注册</a>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore2">
+                <div class="dt">
+                    <a target="_blank" href="http://order.jd.com/center/list.action" target="_blank">我的订单</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore3 dorpdown" id="ttbar-myjd">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>
+                    <a target="_blank" href="http://home.jd.com/">我的京东</a>
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore4">
+                <div class="dt">
+                    <a target="_blank" href="http://vip.jd.com/">京东会员</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore5">
+                <div class="dt">
+                    <a target="_blank" href="http://b.jd.com/">企业采购</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore6 dorpdown" id="ttbar-apps">
+                <div class="dt cw-icon">
+                    <i class="ci-left"></i>
+                    <i class="ci-right"><s>◇</s></i>
+                    <a target="_blank" href="http://app.jd.com/">手机京东</a>
+                </div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore7 dorpdown" id="ttbar-atte">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>关注京东
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore8 dorpdown" id="ttbar-serv">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>客户服务
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+            <li class="spacer"></li>
+            <li class="fore9 dorpdown" id="ttbar-navs">
+                <div class="dt cw-icon">
+                    <i class="ci-right"><s>◇</s></i>网站导航
+                </div>
+                <div class="dd dorpdown-layer"></div>
+            </li>
+        </ul>
+        <span class="clr"></span>
+    </div>
+</div>    <!-- end header -->
+<!-- content -->
+
+
+<!--顶部通栏-->
+<div id="top-banner" clstag="firsttype|keycount|cps_topbanner|topbanner">
+    <div class="w" style="">
+        <a href="javascript:;" id="topbanner-close"></a>
+    </div>
+</div>
+
+<div class="w">
+    <div id="logo-2014" clstag="firsttype|keycount|cps_logo|relogo">
+        <a href="//gou.jd.com/" class="logo">京东</a>
+    </div>
+    <div class="search_2015" id="search_2015">
+        <ul id="ma_shelper" class="hide"></ul>
+        <div class="search_box_2015 clearfix">
+            <div class="magnifier"></div>
+            <input type="text" class="txt" clstag="firsttype|keycount|cps_search|search_box"/>
+            <a href="javascript:void(0);" class="btn" clstag="firsttype|keycount|cps_search|search_button">搜索</a>
+        </div>
+        <ul class="main_nav" clstag="firsttype|keycount|cps_search|search_word">
+
+        </ul>
+    </div>
+    <div id="settleup-2014" class="dorpdown" clstag="firsttype|keycount|cps_cart|cart">
+        <div class="cw-icon">
+            <i class="ci-left"></i>
+            <i class="ci-right">&gt;</i>
+            <a target="_blank" href="http://cart.jd.com/cart/cart.html">我的购物车</a>
+        </div>
+        <div class="dorpdown-layer">
+            <div class="spacer"></div>
+            <div id="settleup-content">
+                <span class="loading"></span>
+            </div>
+        </div>
+    </div>
+    <span class="clr"></span>
+</div>
+
+
+<!--类目-->
+<div class="nav-category" clstag="firsttype|keycount|cps_tree|tree">
+    <div class="w">
+        <div id="categorys-2014" class="dorpdown">
+            <div class="dt">
+                <span>全部商品分类</span>
+            </div>
+            <div class="dd">
+                <div class="dd-inner">
+                    <div class="item fore1" data-index="1">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://channel.jd.com/electronic.html&abt=category&from=cps&promotion_type=1&material_id=">家用电器</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                    <div class="item fore2" data-index="2">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://shouji.jd.com/&abt=category&from=cps&promotion_type=1&material_id=">手机</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://shuma.jd.com/&abt=category&from=cps&promotion_type=1&material_id=">数码</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://mobile.jd.com/&abt=category&from=cps&promotion_type=1&material_id=">京东通信</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                    <div class="item fore3" data-index="3">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://diannao.jd.com/&abt=category&from=cps&promotion_type=1&material_id=">电脑、办公</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                    <div class="item fore4" data-index="4">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://channel.jd.com/home.html&abt=category&from=cps&promotion_type=1&material_id=">家居</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/furniture.html&abt=category&from=cps&promotion_type=1&material_id=">家具</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/decoration.html&abt=category&from=cps&promotion_type=1&material_id=">家装</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/kitchenware.html&abt=category&from=cps&promotion_type=1&material_id=">厨具</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                    <div class="item fore5" data-index="5">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://channel.jd.com/1315-1342.html&abt=category&from=cps&promotion_type=1&material_id=">男装</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/1315-1343.html&abt=category&from=cps&promotion_type=1&material_id=">女装</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/1315-1345.html&abt=category&from=cps&promotion_type=1&material_id=">内衣</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/jewellery.html&abt=category&from=cps&promotion_type=1&material_id=">珠宝</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                    <div class="item fore6" data-index="6">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://channel.jd.com/beauty.html&abt=category&from=cps&promotion_type=1&material_id=">个护化妆</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/1620-1625.html&abt=category&from=cps&promotion_type=1&material_id=">清洁用品</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                    <div class="item fore7" data-index="7">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://channel.jd.com/shoes.html&abt=category&from=cps&promotion_type=1&material_id=">鞋靴</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/bag.html&abt=category&from=cps&promotion_type=1&material_id=">箱包</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/watch.html&abt=category&from=cps&promotion_type=1&material_id=">钟表</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/1672-2615.html&abt=category&from=cps&promotion_type=1&material_id=">奢侈品</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                    <div class="item fore8" data-index="8">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://channel.jd.com/sports.html&abt=category&from=cps&promotion_type=1&material_id=">运动户外</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                    <div class="item fore9" data-index="9">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://car.jd.com/&abt=category&from=cps&promotion_type=1&material_id=">汽车</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://che.jd.com&abt=category&from=cps&promotion_type=1&material_id=">汽车用品</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                    <div class="item fore10" data-index="10">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://baby.jd.com&abt=category&from=cps&promotion_type=1&material_id=">母婴</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/toys.html&abt=category&from=cps&promotion_type=1&material_id=">玩具乐器</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                    <div class="item fore11" data-index="11">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://channel.jd.com/food.html&abt=category&from=cps&promotion_type=1&material_id=">食品</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/wine.html&abt=category&from=cps&promotion_type=1&material_id=">酒类</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://channel.jd.com/freshfood.html&abt=category&from=cps&promotion_type=1&material_id=">生鲜</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://china.jd.com&abt=category&from=cps&promotion_type=1&material_id=">特产</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                    <div class="item fore12" data-index="12">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://channel.jd.com/health.html&abt=category&from=cps&promotion_type=1&material_id=">营养保健</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                    <div class="item fore13" data-index="13">
+                        <h3><a target="_blank"
+                               href="/cps?t=http://book.jd.com/&abt=category&from=cps&promotion_type=1&material_id=">图书</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://mvd.jd.com/&abt=category&from=cps&promotion_type=1&material_id=">音像</a>、<a
+                                target="_blank"
+                                href="/cps?t=http://e.jd.com/ebook.html&abt=category&from=cps&promotion_type=1&material_id=">电子书</a>
+                        </h3>
+                        <i>&gt;</i>
+                    </div>
+                </div>
+                <div class="dorpdown-layer" style="display: none;"></div>
+            </div>
+        </div>
+
+        <div id="navitems-2014">
+
+        </div>
+    </div>
+</div>
+<!-- 618 活动新增结构 -->
+
+<!-- 焦点图 -->
+<div id="focus">
+    <div class="slider">
+
+    </div>
+</div>
+
+<!--首焦右侧-->
+<div class="w" id="focus-extra">
+    <div class="m floor" id="focus-extra-1"></div>
+    <div class="m" id="focus-extra-2"></div>
+</div>
+
+<div class="lazy-fn-wrap clearfix">
+    <div class="w lazy-fn lazy-fn-done">
+        <div class="m clearfix">
+
+        </div>
+    </div>
+</div>
+
+<!-- 今日超值 -->
+<div class="w floor" id="discountoftheday" data-elevator="超值">
+
+</div>
+
+<!-- 今日推荐 -->
+<div class="w floor mt12" id="recomm" data-elevator="推荐">
+    <div class="m">
+        <div class="mt">
+            <h2 class="pl5">今日推荐</h2>
+            <span style="font-size: 18px; line-height: 46px; padding: 0 10px;">|</span>
+            <span style="color: #999; font-size: 14px; font-weight: normal; line-height: 46px;">满减/优惠券，爆款/好口碑，每日精彩推荐！</span>
+        </div>
+        <div class="value_buy m" id="recommList">
+        </div>
+    </div>
+</div>
+
+
+<!-- 今日大牌 -->
+<div class="w floor mt12" id="brandoftheday" data-elevator="大牌">
+
+</div>
+
+<!-- 服饰楼层 -->
+<div class="w floor mb5" id="clothes" data-elevator="服饰" data-animation="true">
+
+</div>
+<script>
+    $(function () {
+        cpsFloor({
+            reqUrl: '/index/floor/clothes',
+            templateType: 'floor',
+            container: 'clothes',
+            clstag: {
+                "clstagList": [
+                    'firsttype|keycount|cps_3F|left-Npictext',
+                    'firsttype|keycount|cps_3F|left-pictext',
+                    'firsttype|keycount|cps_3F|goods',
+                    'firsttype|keycount|cps_3F|right-topic',
+                    'firsttype|keycount|cps_3F|right-query',
+                ]
+            }
+        });
+    })
+</script>
+
+<!-- 手机楼层 -->
+<div class="w floor mb5" id="phone" data-elevator="手机" data-animation="true">
+
+</div>
+<script>
+    $(function () {
+        cpsFloor({
+            reqUrl: '/index/floor/phone',
+            templateType: 'floor2',
+            container: 'phone',
+            clstag: {
+                "clstagList": [
+                    'firsttype|keycount|cps_2F|left-topic',
+                    'firsttype|keycount|cps_2F|left-query',
+                    'firsttype|keycount|cps_2F|goods',
+                    'firsttype|keycount|cps_2F|right-Npictext',
+                    'firsttype|keycount|cps_2F|right-pictext'
+                ]
+            }
+        });
+    })
+</script>
+
+<!-- 家电楼层 -->
+<div class="w floor mb5" id="electron" data-elevator="家电" data-animation="true">
+
+</div>
+<script>
+    $(function () {
+        cpsFloor({
+            reqUrl: '/index/floor/electron',
+            templateType: 'floor',
+            container: 'electron',
+            clstag: {
+                "clstagList": [
+                    'firsttype|keycount|cps_1F|left-Npictext',
+                    'firsttype|keycount|cps_1F|left-pictext',
+                    'firsttype|keycount|cps_1F|goods',
+                    'firsttype|keycount|cps_1F|right-topic',
+                    'firsttype|keycount|cps_1F|right-query'
+                ]
+            }
+        });
+    })
+</script>
+
+<!-- 电脑楼层 -->
+<div class="w floor mb5" id="computers" data-elevator="电脑" data-animation="true">
+
+</div>
+<script>
+    $(function () {
+        cpsFloor({
+            reqUrl: '/index/floor/computers',
+            templateType: 'floor2',
+            container: 'computers',
+            clstag: {
+                "clstagList": [
+                    'firsttype|keycount|cps_4F|left-topic',
+                    'firsttype|keycount|cps_4F|left-query',
+                    'firsttype|keycount|cps_4F|goods',
+                    'firsttype|keycount|cps_4F|right-Npictext',
+                    'firsttype|keycount|cps_4F|right-pictext'
+                ]
+            }
+        });
+    })
+</script>
+
+<!-- 超市楼层 -->
+<div class="w floor mb5" id="supermarket" data-elevator="超市" data-animation="true">
+
+</div>
+<script>
+    $(function () {
+        cpsFloor({
+            reqUrl: '/index/floor/supermarket',
+            templateType: 'floor',
+            container: 'supermarket',
+            clstag: {
+                "clstagList": [
+                    'firsttype|keycount|cps_5F|left-Npictext',
+                    'firsttype|keycount|cps_5F|left-pictext',
+                    'firsttype|keycount|cps_5F|goods',
+                    'firsttype|keycount|cps_5F|right-topic',
+                    'firsttype|keycount|cps_5F|right-query',
+                ]
+            }
+        });
+    })
+</script>
+
+<!-- 图书楼层 -->
+<div class="w floor mb5" id="booksAudible" data-elevator="图书" data-animation="true">
+
+</div>
+<script>
+    $(function () {
+        cpsFloor({
+            reqUrl: '/index/floor/booksAudible',
+            templateType: 'floor2',
+            container: 'booksAudible',
+            clstag: {
+                "clstagList": [
+                    'firsttype|keycount|cps_6F|left-topic',
+                    'firsttype|keycount|cps_6F|left-query',
+                    'firsttype|keycount|cps_6F|goods',
+                    'firsttype|keycount|cps_6F|right-Npictext',
+                    'firsttype|keycount|cps_6F|right-pictext'
+                ]
+            }
+        });
+    })
+</script>
+
+<!-- 热卖楼层 -->
+<div class="bg-grayf5">
+    <div class="w floor lazy-fn mt12 mb12" id="hot" data-elevator="热卖单品" data-animation="true">
+
+    </div>
+</div>
+
+<div id="elevator" class="elevator" clstag="firsttype|keycount|cps_right|nav">
+
+</div>
+
+<script type="text/javascript">
+    // 直接printf json
+    globalScope = {};
+    globalScope.focusData = [{
+        "href": "/cps?t=http%3A%2F%2Fsale.jd.com%2Fact%2FvxSIhCHBKP1.html&abt=cps_banner&from=cps&promotion_type=30&material_id=&adowner=",
+        "src": "jfs/t3001/219/2651659429/203125/450428f0/57de54ffN4f5b0260.jpg"
+    }, {
+        "href": "/cps?t=http%3A%2F%2Fsale.jd.com%2Fact%2FndVDWF7G2x.html&abt=cps_banner&from=cps&promotion_type=30&material_id=&adowner=",
+        "src": "jfs/t3262/317/2145237752/153028/b42c7a6f/57dcb78fNf1fd225e.jpg"
+    }, {
+        "href": "/cps?t=http%3A%2F%2Fsale.jd.com%2Fact%2FwhzRPbG7QpeL.html&abt=cps_banner&from=cps&promotion_type=30&material_id=&adowner=",
+        "src": "jfs/t3079/146/2142805508/153562/9f7a789a/57dcb81eN4c984f54.jpg"
+    }, {
+        "href": "/cps?t=http%3A%2F%2Fsale.jd.com%2Fact%2FoW15j6LSdKAEQXe.html&abt=cps_banner&from=cps&promotion_type=30&material_id=&adowner=",
+        "src": "jfs/t3304/349/2193892699/174114/b771ad26/57dde203N4492b5ff.jpg"
+    }, {
+        "href": "/cps?t=http%3A%2F%2Fsale.jd.com%2Fact%2Feuns1ZSUI7MC.html&abt=cps_banner&from=cps&promotion_type=30&material_id=&adowner=",
+        "src": "jfs/t3196/320/2134378414/114982/2b051473/57dcb86aNc7d5faac.jpg"
+    }, {
+        "href": "/cps?t=http%3A%2F%2Fsale.jd.com%2Fact%2FAWhnH15p2qVJ.html%3Fcpdad%3D1DLSUE&abt=cps_banner&from=cps&promotion_type=30&material_id=&adowner=",
+        "src": "jfs/t3118/193/2245648849/176134/ff50dbee/57de6b89N0b178670.jpg"
+    }];
+    globalScope.focusExtraData = {
+        "itemList": [{
+            "activeType": 1,
+            "imgURL": "",
+            "link": "/cps?t=http%3A%2F%2Fsale.jd.com%2Fact%2FndVDWF7G2x.html&abt=cps_right_text&from=cps&promotion_type=30&material_id=&adowner=",
+            "subtitle": "跨店3件7折",
+            "title": "【男装】男装节运动分会场"
+        }, {
+            "activeType": 1,
+            "imgURL": "",
+            "link": "/cps?t=http%3A%2F%2Fsale.jd.com%2Fact%2FCikMvLlcQ34T1sgI.html&abt=cps_right_text&from=cps&promotion_type=30&material_id=&adowner=",
+            "subtitle": "满399减180",
+            "title": "【生鲜】自营品蟹季"
+        }, {
+            "activeType": 1,
+            "imgURL": "",
+            "link": "/cps?t=http%3A%2F%2Fsale.jd.com%2Fact%2FrkLyZjF4eNd.html&abt=cps_right_text&from=cps&promotion_type=30&material_id=&adowner=",
+            "subtitle": "百变新品 秋天这么穿",
+            "title": "【秋装】秋装新品6折"
+        }, {
+            "activeType": 1,
+            "imgURL": "",
+            "link": "/cps?t=http%3A%2F%2Fsale.jd.com%2Fact%2FoW15j6LSdKAEQXe.html&abt=cps_right_text&from=cps&promotion_type=30&material_id=&adowner=",
+            "subtitle": "热款买一送多",
+            "title": "【家电】中秋狂购趴"
+        }, {
+            "activeType": 1,
+            "imgURL": "",
+            "link": "/cps?t=http%3A%2F%2Fsale.jd.com%2Fact%2FILh0p8uGrck.html&abt=cps_right_text&from=cps&promotion_type=30&material_id=&adowner=",
+            "subtitle": "全场下装两件七折",
+            "title": "【服饰】裤装大联合"
+        }]
+    };
+    globalScope.customNav = {
+        "itemList": [{
+            "activeType": 0,
+            "link": "/cps?t=http%3A%2F%2F3c.jd.com%2F&abt=cps_nav1&from=cps&promotion_type=15&material_id=&adowner=",
+            "subtitle": "0",
+            "title": "玩3C"
+        }, {
+            "activeType": 0,
+            "link": "/cps?t=http%3A%2F%2Fchannel.jd.com%2Felectronic.html&abt=cps_nav2&from=cps&promotion_type=15&material_id=&adowner=",
+            "subtitle": "0",
+            "title": "家电城"
+        }, {
+            "activeType": 0,
+            "link": "/cps?t=http%3A%2F%2Fchaoshi.jd.com%2F&abt=cps_nav3&from=cps&promotion_type=15&material_id=&adowner=",
+            "subtitle": "0",
+            "title": "京东超市"
+        }]
+    };
+    globalScope.ver = '20160719';
+
+    // debug
+    globalScope.debug = {
+        url: '',
+        dataType: 'json'
+    }
+    globalScope.imgCdnPrefixCMS = '//img30.360buyimg.com/ads/';
+    window.appname = 'home';
+</script>
+
+<script type="text/javascript" src="//wl.jd.com/wl.js"></script>
+
+<!-- end content -->
+<!-- footer -->
+<!-- Footer -->
+<div class="w price-tips">
+    <p>温馨提示：京东超值购（gou.jd.com）的优惠促销信息具有较强的时效性，请在购物时注意核实，具体以京东相应活动页/商品页的实际促销及价格为准。</p>
+</div>
+
+<div id="service-2014" clstag="h|keycount|2015|32a">
+    <div class="slogen">
+    <span class="item fore1">
+      <i></i><b>多</b>品类齐全，轻松购物
+    </span>
+        <span class="item fore2">
+      <i></i><b>快</b>多仓直发，极速配送
+    </span>
+        <span class="item fore3">
+      <i></i><b>好</b>正品行货，精致服务
+    </span>
+        <span class="item fore4">
+      <i></i><b>省</b>天天低价，畅选无忧
+    </span>
+    </div>
+    <div class="w">
+        <dl class="fore1">
+            <dt>购物指南</dt>
+            <dd>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-29.html">购物流程</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-151.html">会员介绍</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-297.html">生活旅行/团购</a>
+                </div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue.html">常见问题</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-136.html">大家电</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/index.html">联系客服</a></div>
+            </dd>
+        </dl>
+        <dl class="fore2">
+            <dt>配送方式</dt>
+            <dd>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-81-100.html">上门自提</a>
+                </div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-81.html">211限时达</a>
+                </div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/103-983.html">配送服务查询</a>
+                </div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/109-188.html">配送费收取标准</a>
+                </div>
+                <div><a target="_blank" href="http://en.jd.com/chinese.html">海外配送</a></div>
+            </dd>
+        </dl>
+        <dl class="fore3">
+            <dt>支付方式</dt>
+            <dd>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-172.html">货到付款</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-173.html">在线支付</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-176.html">分期付款</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-174.html">邮局汇款</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-175.html">公司转账</a></div>
+            </dd>
+        </dl>
+        <dl class="fore4">
+            <dt>售后服务</dt>
+            <dd>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/321-981.html">售后政策</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-132.html">价格保护</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/130-978.html">退款说明</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://myjd.jd.com/repair/repairs.action">返修/退换货</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://help.jd.com/user/issue/list-50.html">取消订单</a></div>
+            </dd>
+        </dl>
+        <dl class="fore5">
+            <dt>特色服务</dt>
+            <dd>
+                <div><a target="_blank" href="http://help.jd.com/user/issue/list-133.html">夺宝岛</a></div>
+                <div><a target="_blank" href="http://help.jd.com/user/issue/list-134.html">DIY装机</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://fuwu.jd.com/">延保服务</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://giftcard.jd.com/market/index.action">京东E卡</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://mobile.jd.com/">京东通信</a></div>
+                <div><a rel="nofollow" target="_blank" href="http://s.jd.com/">京东JD+</a></div>
+            </dd>
+        </dl>
+        <div id="coverage">
+            <div class="dt">
+                京东自营覆盖区县
+            </div>
+            <div class="dd">
+                <p>京东已向全国2392个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+                <p class="ar"><a target="_blank" href="http://help.jd.com/user/issue/103-983.html">查看详情&nbsp;&gt;</a>
+                </p>
+            </div>
+        </div>
+        <span class="clr"></span>
+    </div>
+</div>
+
+<div class="w">
+    <div id="footer-2014">
+        <div class="links">
+            <a rel="nofollow" target="_blank" href="http://www.jd.com/intro/about.aspx">关于我们</a>|<a rel="nofollow"
+                                                                                                    target="_blank"
+                                                                                                    href="http://www.jd.com/contact/">联系我们</a>|<a
+                rel="nofollow" target="_blank" href="http://www.jd.com/contact/joinin.aspx">商家入驻</a>|<a rel="nofollow"
+                                                                                                        target="_blank"
+                                                                                                        href="http://jzt.jd.com">营销中心</a>|<a
+                rel="nofollow" target="_blank" href="http://app.jd.com/">手机京东</a>|<a target="_blank"
+                                                                                     href="http://club.jd.com/links.aspx">友情链接</a>|<a
+                target="_blank" href="http://media.jd.com/">销售联盟</a>|<a href="http://club.jd.com/"
+                                                                        target="_blank">京东社区</a>|<a
+                href="http://gongyi.jd.com" target="_blank">京东公益</a>|<a href="http://en.jd.com/" target="_blank">English
+            Site</a>|<a href="http://help.en.jd.com/help/question-46.html" target="_blank">Contact Us</a>
+        </div>
+        <div class="copyright">
+            北京市公安局朝阳分局备案编号110105014669&nbsp;&nbsp;|&nbsp;&nbsp;京ICP证070359号&nbsp;&nbsp;|&nbsp;&nbsp;<a target="_blank"
+                                                                                                       href="http://img14.360buyimg.com/da/jfs/t256/349/769670066/270505/3b03e0bb/53f16c24N7c04d9e9.jpg">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>&nbsp;&nbsp;|&nbsp;&nbsp;新出发京零&nbsp;字第大120007号<br><a
+                rel="nofollow" href="http://misc.360buyimg.com/skin/df/i/com/f_music.jpg" target="_blank">音像制品经营许可证苏宿批005号</a>&nbsp;&nbsp;|&nbsp;&nbsp;出版物经营许可证编号新出发(苏)批字第N-012号&nbsp;&nbsp;|&nbsp;&nbsp;互联网出版许可证编号新出网证(京)字150号<br><a
+                href="http://misc.360buyimg.com/wz/wlwhjyxkz.jpg" target="_blank">网络文化经营许可证京网文[2014]2148-348号</a>&nbsp;&nbsp;违法和不良信息举报电话：4006561155&nbsp;&nbsp;Copyright&nbsp;&copy;&nbsp;2004-2015&nbsp;&nbsp;京东JD.com&nbsp;版权所有<br>京东旗下网站：<a
+                target="_blank" href="http://www.360top.com/">360TOP</a>&nbsp;&nbsp;<a href="http://www.paipai.com/"
+                                                                                       target="_blank">拍拍网</a>&nbsp;&nbsp;<a
+                href="https://www.wangyin.com/" target="_blank">网银在线</a>
+        </div>
+
+        <div class="authentication">
+            <a rel="nofollow" target="_blank" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=010202007080200026">
+                <img width="103" height="32" alt="经营性网站备案中心"
+                     src="//img12.360buyimg.com/da/jfs/t535/349/1185317137/2350/7fc5b9e4/54b8871eNa9a7067e.png"/>
+            </a>
+            <script type="text/JavaScript">function CNNIC_change(eleId) {
+                var str = document.getElementById(eleId).href;
+                var str1 = str.substring(0, (str.length - 6));
+                str1 += CNNIC_RndNum(6);
+                document.getElementById(eleId).href = str1;
+            }
+            function CNNIC_RndNum(k) {
+                var rnd = "";
+                for (var i = 0; i < k; i++) rnd += Math.floor(Math.random() * 10);
+                return rnd;
+            }</script>
+            <a rel="nofollow" target="_blank" id="urlknet" tabindex="-1"
+               href="https://ss.knet.cn/verifyseal.dll?sn=2008070300100000031&amp;ct=df&amp;pa=294005">
+                <img border="true" width="103" height="32" onclick="CNNIC_change('urlknet')"
+                     oncontextmenu="return false;" name="CNNIC_seal" alt="可信网站"
+                     src="//img11.360buyimg.com/da/jfs/t643/61/1174624553/2576/4037eb5f/54b8872dNe37a9860.png"/>
+            </a>
+            <a rel="nofollow" target="_blank" href="http://www.bj.cyberpolice.cn/index.do">
+                <img width="103" height="32" alt="朝阳网络警察"
+                     src="//img11.360buyimg.com/da/jfs/t559/186/1172042286/2795/7d90b036/54b8874bN694454a5.png"/>
+            </a>
+            <a rel="nofollow" target="_blank" href="https://search.szfw.org/cert/l/CX20120111001803001836">
+                <img width="103" height="32"
+                     src="//img11.360buyimg.com/da/jfs/t451/173/1189513923/1992/ec69b14a/54b8875fNad1e0c4c.png"/>
+            </a>
+            <a target="_blank" href="http://jubao.china.cn:13225/reportform.do">
+                <img width="185" height="32"
+                     src="//img10.360buyimg.com/da/jfs/t520/303/1151687373/1180/2f8340fc/54b8863dN8d2c61ec.png"/>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    /* toolbar */
+    (function () {
+        pageConfig.toolbar = true;
+        if ($('#J-global-toolbar').length) return false;
+        setTimeout(function () {
+            $("body").append('<div id="J-global-toolbar"></div>');
+            var opts = {pType: window.appname};
+            /**
+             if ( location.protocol == 'https:' ) {
+                opts.bars = {
+                    jimi: false
+                };
+            }
+             */
+            /**'product/toolbar/1.0.1/js/main.js'*/
+            seajs.use(['//static.360buyimg.com/devfe/toolbar/1.0.0/js/main.js'], function (toolbar) {
+                $('<style type="text/css">.jdm-toolbar .jdm-toolbar-footer .jdm-tbar-tab-survey .tab-ico {display: none;_display:none;}.jdm-toolbar .jdm-toolbar-footer .jdm-tbar-tab-survey .tab-text {left: 0px;width: 35px;height:30px;padding:2px 0 3px;line-height: 15px;background: #c81623;_display:block;</style>').appendTo($('head:eq(0)'));
+                var linksConfig = {top: {anchor: "#"}};
+                if (pageConfig.surveyLink) {
+                    linksConfig.feedback = {href: pageConfig.surveyLink};
+                }
+                if (pageConfig.awardsLink && pageConfig.awardsTitle) {
+                    linksConfig.survey = {href: pageConfig.awardsLink, title: pageConfig.awardsTitle};
+                }
+                opts.links = linksConfig;
+                pageConfig.toolbar = new toolbar(opts);
+            });
+        }, 3000);
+    })();
+</script>    <!-- end footer -->
+</body>
+</html>

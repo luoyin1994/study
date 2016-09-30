@@ -1,8 +1,54 @@
-body{
+body {
     font-family: 'MicrosoftYaHei', '微软雅黑';
 }
+
 .com-width {
     width: 1000px;
     margin: 0 auto;
 }
 
+/*banner-bar公共部分*/
+.banner-bar {
+    font-size: 0;
+    /*width: 810px;*/
+    /*height: 326px;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.imgBox {
+    /*width: 1620px;*/
+    /*height: 326px;*/
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.imgBox img {
+    display: block;
+    /*width: 810px;*/
+    /*height: 326px;*/
+}
+
+.imgNum {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.imgNum a {
+    width: 20px;
+    height: 5px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.imgNum a + a {
+    margin-left: 5px;
+}
+
+.imgNum .active {
+    background-color: #ff7700;
+}

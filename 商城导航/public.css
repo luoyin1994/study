@@ -1,0 +1,15 @@
+
+.fl-ul-clear:before, .fl-ul-clear:after,
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: '';
+}
+
+.fl-ul-clear:after,
+.clearfix:after {
+    clear: both;
+}
+
+.fl-ul-clear li {
+    float: left;
+}
